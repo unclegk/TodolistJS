@@ -1,0 +1,117 @@
+/* Styling of body, fonts etc. centering everything on website*/
+* {
+    font-family: 'Josefin Sans',
+    sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    padding: 2%;
+    min-height: 30vh;
+    min-width: 30vw;
+    width: auto;
+    height: auto;
+    margin-top: 10vh;
+    border-radius: 5%;
+    background-color: lightcoral;
+}
+
+/* Styling of headers - borders etc*/
+h1 { border-bottom: 5px solid black;
+    margin-bottom: 50px;
+text-align: center}
+h2 {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    border-bottom: 5px solid black;
+    display: block;
+    width: auto;
+}
+
+
+/* spacing with add button + headers*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styling text input */
+header input {
+    min-height: 40px;
+    width: 100%;
+    padding-left: 5%;
+    background-color: white;
+
+}
+/* add button*/
+header button {
+    min-width: 40px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+
+/* Making sure the lists fill the whole section*/
+li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+li .buttons {
+    min-width: 100px;
+    margin-left: auto;
+    display: inline;
+}
+
+li .buttons button {
+    background:none;
+    min-width: 40px;
+    border: none;
+    font-size: 2rem;
+}
+
+/* Styling of users and tasks */
+.todo li {background-color: red;}
+
+.doing li {
+    background-color: yellow;
+}
+.complete li {
+    background-color: green;
+}
+
+svg {
+    max-width: 25px;
+}
+
+#user1 svg path {
+    fill: blue;
+}
+#user2 svg path {
+    fill: purple;
+}
+#completed svg path {
+    fill: green;
+}
+
+
+
+
